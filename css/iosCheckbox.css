@@ -1,0 +1,29 @@
+.iosCheckbox {
+    display:-moz-inline-box; display:inline-block; *zoom: 1; *display:inline;
+    vertical-align: middle;
+    background: url(../images/iosCheckbox/background.png) no-repeat left -23px;
+    width: 59px;
+    height: 23px;
+    position: relative;
+}
+.iosCheckbox > input[type=checkbox] {
+    display: none;
+}
+.iosCheckbox.checked {
+    background-position: 0 -46px;
+}
+
+.iosCheckbox-slider {
+    background: url(../images/iosCheckbox/slider.png) no-repeat left top;
+    width: 26px;
+    height: 26px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.iosCheckbox.checked .iosCheckbox-slider {
+    left: auto;
+    right: 0px;
+    
+}
