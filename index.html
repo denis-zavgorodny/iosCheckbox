@@ -15,6 +15,14 @@
     <script type="text/javascript">
         jQuery(document).ready(function(){
             jQuery('#iosCheckbox').iosCheckbox();
+            jQuery('.strip').click(function(){
+                jQuery('#iosCheckbox').iosCheckbox("destroy");
+                return false;
+            });
+            jQuery('.mask').click(function(){
+                jQuery('#iosCheckbox').iosCheckbox();
+                return false;
+            });
         });
     </script>
     <style type="text/css">
@@ -24,8 +32,13 @@
     </style>
 </head>
 <body>
+    <h1>Стилизация чекбокса</h1>
     <form action="#" method="post">
         <input type="checkbox" name="test" value="1" id="iosCheckbox" /><label for="iosCheckbox">Чекбокс</label>
     </form>
+    <br />
+    <a href="#" class="strip">Раздеть чекбокс</a>
+    <br />
+    <a href="#" class="mask">Маскировать чекбокс</a>
 </body>
 </html>
